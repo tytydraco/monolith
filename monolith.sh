@@ -2,7 +2,7 @@
 
 MODE="everything"
 
-packages="$(pm list packages -3 | toybox sed 's/.*://')"
+packages="$(pm list packages | toybox sed 's/.*://')"
 for package in $packages
 do
     echo "[1/3] $package"
