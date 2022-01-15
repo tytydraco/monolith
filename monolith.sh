@@ -1,13 +1,13 @@
 #!/system/bin/sh
 
-MODE="everything"
+MODE="everything-profile"
 
 echo ">>> PART 1"
 echo
-pm compile -a -f --check-prof false -m "$MODE"
+pm compile -a -f -m "$MODE"
 echo ">>> PART 2"
 echo
-pm compile -a -f --check-prof false --compile-layouts
+pm compile -a -f --compile-layouts
 
 echo ">>> Cleaning up"
 pm bg-dexopt-job
