@@ -1,10 +1,8 @@
 #!/system/bin/sh
 
-MODE="everything-profile"
-
 echo ">>> PART 1"
 echo
-cmd package compile -a -f -m "$MODE"
+cmd package compile -m everything-profile -f -a
 
 echo ">>> PART 2"
 echo
